@@ -1,0 +1,12 @@
+{
+    "name": "tp-todo-list",
+    "version": "0.1.0",
+    "dependencies": {
+        "body-parser": "~1.19.0",
+        "cookie-session": "~1.4.0",
+        "ejs": "~3.0.1",
+        "express": "~4.17.1"
+    },
+    "author": "Achraf Boumadiane  <achraf.boumadiane@yahoo.com>",
+    "description": "TP To Do List Basic"
+}

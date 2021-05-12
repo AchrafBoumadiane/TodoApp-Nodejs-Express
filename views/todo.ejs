@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        a {text-decoration: none; color: black;}
+    </style>
+    <title>TodoApp</title>
+</head>
+<body>
+    <h1>My TodoApp</h1>
+
+    <ul>
+        <%
+            todolist.forEach(function(todo, index){
+        %>
+            <li>
+                <a href="/todo/delete/<%= index %>"> X </a>  <%= todo %>
+            </li>
+        <%
+            });
+        %>
+    </ul>
+
+    <form action="/todo/add/" method="POST">
+        <p>
+            <label for="newtodo">What should I do ?!</label>
+            <input type="text" name="newtodo" id="newtodo" autofocus>
+            <input type="submit" value="Done!">
+        </p>
+    </form>
+</body>
+</html>
